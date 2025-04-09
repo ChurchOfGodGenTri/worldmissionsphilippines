@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Our Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-variant: small-caps;
+    }
+
+    .info-text {
+      font-family: 'Merriweather', serif;
+      line-height: 1.7;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .dark-blue {
+      color: #003366;
+    }
+
+    .nav-link {
+      font-family: 'Calibri', sans-serif;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: #003366;
+    }
+
+    .section-heading {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #003366;
+    }
+
+    .acronym-item {
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #1e40af; /* Tailwind blue-800 */
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+      position: relative; /* Ensure the dropdown is within the nav */
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      min-width: 160px;
+      z-index: 10; /* Ensure dropdown is above other content */
+    }
+    
+    .dropdown-menu a {
+      color: #003366;
+      padding: 8px 12px;
+      display: block;
+    }
+    
+    .dropdown-menu a:hover {
+      background-color: #f3f4f6;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <header class="bg-white text-blue-800 py-4 px-6 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="images/coglogo.png" alt="Church Logo" class="h-20 w-20">
+      <div class="leading-tight">
+        <h1 class="text-2xl font-bold tracking-wide dark-blue">Church of God</h1>
+        <p class="text-sm dark-blue">WORLD MISSIONS, PHILIPPINES</p>
+      </div>
+    </div>
+    <nav class="space-x-4">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="aboutus.html" class="nav-link">ABOUT US</a>
+      <div class="dropdown inline-block relative">
+        <a href="#" class="nav-link">WORDA</a>
+        <div class="dropdown-menu absolute right-0">
+          <a href="worship.html">WORSHIP</a>
+          <a href="outreach.html">OUTREACH</a>
+          <a href="relationship.html">RELATIONSHIP</a>
+          <a href="discipleship.html">DISCIPLESHIP</a>
+          <a href="administration.html">ADMINISTRATION</a>
+        </div>
+      </div>
+      <a href="sermon.html" class="nav-link">SERMON</a>
+      <a href="mikay's.html" class="nav-link">MIKAY'S EXTENSION</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative h-80 bg-cover bg-center" style="background-image: url('images/worda.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h2 class="text-white text-4xl font-bold drop-shadow-lg">WORDA</h2>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <main class="max-w-5xl mx-auto py-10 px-6">
+    <p class="info-text">
+      Here at Church of God, we have come up with the acronym <span class="highlight">WORDA</span>. It is the structure of the church that helps maintain its proper functions. It stands for <span class="highlight">Worship, Outreach, Relationship, Discipleship,</span> and <span class="highlight">Administration</span>. These are the five departments of the Church of God that work collaboratively to reach lost souls and to bring glory to the Lord of lords. This kind of operational structure first started at COG-Dasmariñas and now, several COG churches in the Philippines have adapted the same structure as well.
+    </p>
+
+    <div>
+      <h3 class="section-heading">WORSHIP</h3>
+      <p class="info-text">To usher the congregation into the awesome presence of God in every service.</p>
+      <ul class="info-text">
+        <li class="acronym-item"><span class="highlight">M</span> – mastery of skills through seminars</li>
+        <li class="acronym-item"><span class="highlight">U</span> – unleashing of God-given gifts</li>
+        <li class="acronym-item"><span class="highlight">S</span> – submission to the Holy Spirit in prayer</li>
+        <li class="acronym-item"><span class="highlight">I</span> – immaculate living</li>
+        <li class="acronym-item"><span class="highlight">C</span> – commitment to the Word of the Lord</li>
+
+      <h3 class="section-heading">OUTREACH</h3>
+      <p class="info-text">To mobilize the church in spreading the Gospel of Christ.</p>
+      <ul class="info-text">
+        <li class="acronym-item"><span class="highlight">S</span> – seek the lost souls through house-to-house evangelization</li>
+        <li class="acronym-item"><span class="highlight">A</span> – acquire the wisdom of God through seminars and prayers</li>
+        <li class="acronym-item"><span class="highlight">V</span> – voice out the goodness of God through crusade</li>
+        <li class="acronym-item"><span class="highlight">E</span> – encourage every Christian to fulfill the Great Commission</li>
+
+      <h3 class="section-heading">RELATIONSHIP</h3>
+      <p class="info-text">To make people feel that we are one family in this church.</p>
+      <ul class="info-text">
+        <li class="acronym-item"><span class="highlight">C</span> – convey the love of God through church gatherings and care groups’ activities</li>
+        <li class="acronym-item"><span class="highlight">A</span> – associate with the new believers</li>
+        <li class="acronym-item"><span class="highlight">R</span> – revitalize those who are weak and in trouble through visitation</li>
+        <li class="acronym-item"><span class="highlight">E</span> – establish strong bonding within the church that is centered in Christ, and motivate each other to be involved in the ministry</li>
+
+      <h3 class="section-heading">DISCIPLESHIP</h3>
+      <p class="info-text">To engrave the mind of Christ in each believer’s heart and be able to practice authentic Christian living.</p>
+      <ul class="info-text">
+        <li class="acronym-item"><span class="highlight">G</span> – guide the people to a sound doctrine through the Bible</li>
+        <li class="acronym-item"><span class="highlight">R</span> – radiate the teaching of Christ by becoming a worker of the church</li>
+        <li class="acronym-item"><span class="highlight">O</span> – optimize the capacity of every Christian by molding him through church modules</li>
+        <li class="acronym-item"><span class="highlight">W</span> – work out to maintain the acquired knowledge through enrichment programs</li>
+
+      <h3 class="section-heading">ADMINISTRATION</h3>
+      <p class="info-text">To support the W.O.R.D departments in their ministerial activities.</p>
+      <ul class="info-text">
+        <li class="acronym-item"><span class="highlight">A</span> – assisting the ministerial activities of each department through funds, Sunday Word, quality sound system, and multimedia support and proper documentation</li>
+        <li class="acronym-item"><span class="highlight">I</span> – inventory of all church equipment</li>
+        <li class="acronym-item"><span class="highlight">D</span> – development of skills among full-time workers for proper maintenance of all church facilities</li>
+    </div>
+  </main>
+</body>
+</html>
+
+<footer style="background-color: #ADD8E6; text-align: center; padding: 20px; font-family: Arial, sans-serif; color: #333;">
+  <div style="margin-bottom: 15px;">
+      <a href="https://www.facebook.com/ChurchOfGodGeneralTrias" target="_blank" style="color: #333; text-decoration: none; font-size: 16px; margin-right: 20px;">Facebook</a>
+      <a href="mailto:info@churchofgodgentratas.org" style="color: #333; text-decoration: none; font-size: 16px;">Email</a>
+  </div>
+  <div style="font-size: 14px; color: #555;">
+      <p>&copy; 2025 Church of God General Trias. All rights reserved.</p>
+      <p><strong>Disclaimer:</strong> Unauthorized copying or reproduction of this page is strictly prohibited.</p>
+  </div>
+</footer>

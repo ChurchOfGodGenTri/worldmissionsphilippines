@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relationship Ministry | Church Of God</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-variant: small-caps;
+    }
+
+    .info-text {
+      font-family: 'Merriweather', serif;
+      line-height: 1.7;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .dark-blue {
+      color: #003366;
+    }
+
+    .nav-link {
+      font-family: 'Calibri', sans-serif;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: #003366;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #003366;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .section-heading {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      color: #003366;
+    }
+
+    /* Updated Grid Layout for Images */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .image-grid .card {
+      text-align: center;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-grid .card:hover {
+      transform: scale(1.05);
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="bg-white text-blue-800 py-4 px-6 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="images/coglogo.png" alt="Church Logo" class="h-20 w-20">
+      <div class="leading-tight">
+        <h1 class="text-2xl font-bold tracking-wide dark-blue">Church of God</h1>
+        <p class="text-sm dark-blue">WORLD MISSIONS, PHILIPPINES</p>
+      </div>
+    </div>
+
+    <nav class="space-x-4">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="aboutus.html" class="nav-link">ABOUT US</a>
+      <div class="dropdown inline-block">
+        <a href="worda.html" class="nav-link">WORDA</a>
+        <div class="dropdown-content">
+          <a href="worship.html">WORSHIP</a>
+          <a href="outreach.html">OUTREACH</a>
+          <a href="relationship.html">RELATIONSHIP</a>
+          <a href="discipleship.html">DISCIPLESHIP</a>
+          <a href="administration.html">ADMINISTRATION</a>
+        </div>
+      </div>
+      <a href="sermon.html" class="nav-link">SERMON</a>
+      <a href="mikay's.html" class="nav-link">MIKAY'S EXTENSION</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative h-80 bg-cover bg-center" style="background-image: url('images/w.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h2 class="text-white text-4xl font-bold shadow-black drop-shadow-lg">WORSHIP</h2>
+    </div>
+  </section>
+
+  <!-- Worship Ministry Info Section -->
+  <div class="px-6 py-8">
+    <h2 class="text-3xl font-bold dark-blue">WORSHIP MINISTRY</h2>
+    <p class="info-text dark-blue">
+      To usher the congregation into the awesome presence of God in every service. The ministry is made up of several vital branches.
+    </p>
+
+    <!-- Worship Ministry Tree -->
+<div class="section-heading">THE BRANCHES OF WORSHIP MINISTRY</div>
+
+<!-- Large Tree Image -->
+<div class="w-full mb-8">
+  <img src="images/worship.jpg" alt="Tree Image" class="w-full rounded-lg shadow-lg">
+</div>
+
+<!-- Smaller Branches Images -->
+<div class="image-grid">
+  <div class="card">
+    <h3>SINGERS</h3>
+    <img src="images/singers.jpg" alt="Singers Image">
+    <p class="info-text dark-blue">The voices that bring the congregation together in harmony.</p>
+  </div>
+  <div class="card">
+    <h3>MUSICIANS</h3>
+    <img src="images/musicians.jpg" alt="Musicians Image">
+    <p class="info-text dark-blue">The instrumentalists that lead the sound of praise.</p>
+  </div>
+  <div class="card">
+    <h3>DANCERS</h3>
+    <img src="images/dance.jpg" alt="Dancers Image">
+    <p class="info-text dark-blue">The worshipers who express the beauty of God's love through dance.</p>
+  </div>
+</div>
+
+<div class="image-grid">
+  <div class="card">
+    <h3>CRTV</h3>
+    <img src="images/crtv.jpg" alt="CRTV Image">
+    <p class="info-text dark-blue">The media team that captures and broadcasts worship moments.</p>
+  </div>
+  <div class="card">
+    <h3>Audio</h3>
+    <img src="images/audio.jpg" alt="Audio Image">
+    <p class="info-text dark-blue">The sound team that ensures the best audio experience for the service.</p>
+  </div>
+  <div class="card">
+    <h3>Another Ministry</h3>
+    <img src="images/another-ministry.jpg" alt="Another Ministry Image">
+    <p class="info-text dark-blue">Another ministry in Church of God</p>
+  </div>
+</div>
+
+
+<!-- Label Above Full Group Photo -->
+<div class="w-full mb-8 text-center">
+  <h3 class="text-xl font-semibold dark-blue mb-4">GROUP PHOTO OF WORSHIP TEAM</h3>
+  <img src="images/grouppictureworshipteam .jpg" alt="Worship Team Group Photo" class="w-full max-w-3xl mx-auto rounded-lg shadow-lg">
+</div>

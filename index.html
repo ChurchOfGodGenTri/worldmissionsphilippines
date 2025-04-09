@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Church Of God</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-variant: small-caps;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dark-blue {
+      color: #003366;
+    }
+
+    .nav-link {
+      font-family: 'Calibri', sans-serif;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: #003366;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #003366;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Background Image */
+    .background {
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .background h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .background .button {
+      background-color: #FFD700;
+      color: #003366;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .background .button:hover {
+      background-color: #e6b800;
+    }
+
+    /* Info Section */
+    .info-section {
+      font-family: 'Merriweather', serif;
+      color: #003366;
+      text-align: justify;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="bg-white text-blue-800 py-4 px-6 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="images/coglogo.png" alt="Church Logo" class="h-20 w-20">
+      <div class="leading-tight">
+        <h1 class="text-2xl font-bold tracking-wide dark-blue">Church of God</h1>
+        <p class="text-sm dark-blue">WORLD MISSIONS, PHILIPPINES</p>
+      </div>
+    </div>
+
+    <nav class="space-x-4">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="aboutus.html" class="nav-link">ABOUT US</a>
+      <div class="dropdown inline-block">
+        <a href="worda.html" class="nav-link">WORDA</a>
+        <div class="dropdown-content">
+          <a href="worship.html">WORSHIP</a>
+          <a href="outreach.html">OUTREACH</a>
+          <a href="relationship.html">RELATIONSHIP</a>
+          <a href="discipleship.html">DISCIPLESHIP</a>
+          <a href="administration.html">ADMINISTRATION</a>
+        </div>
+      </div>
+      <a href="sermon.html" class="nav-link">SERMON</a>
+      <a href="mikay's.html" class="nav-link">MIKAY'S EXTENSION</a>
+    </nav>
+  </header>
+
+  <!-- Background Section -->
+<section class="background">
+  <h1>CHURCH OF GOD, GENERAL TRIAS CAVITE</h1>
+  <a href="service.html">
+    <button class="button">SERVICE SCHEADULE</button>
+  </a>
+</section>
+
+<!-- Info Section -->
+<section class="py-12 px-6 md:px-20 lg:px-32 bg-gray-50 text-justify text-black-900 uppercase leading-relaxed tracking-wide space-y-6 font-serif">
+  <p class="text-center font-bold text-lg mt-10 mb-4">HISTORY OF CHURCH OF GOD GENERAL TRIAS</p>
+
+  <p>CHURCH OF GOD GENERAL TRIAS WEST, FORMERLY KNOWN AS POTTER'S HOUSE CHRISTIAN FELLOWSHIP, HAS ITS ROOTS IN THE PENTECOSTAL TRADITIONS.</p>
+
+  <p>PASTOR ROLANDO D. LOTERIA, THE PIONEERING PASTOR, IS A GRADUATE OF THE ASIAN SEMINARY OF CHRISTIAN MINISTRIES (2001)—WITH A DEGREE IN BACHELOR OF THEOLOGY. HE STARTED THE MINISTRY IN JUNE 1998. THE FIRST BIBLE STUDY WAS ATTENDED BY NINE NEIGHBORS AND SINCE THEN, THE SMALL GROUP BLOSSOMED INTO A CARE GROUP CHURCH AS THE YEARS PASSED.</p>
+
+  <p>IN THE LAST QUARTER OF 1998, THE LORD GOD ALMIGHTY GAVE PASTOR ROLAN A VISION OF “A GROUP OF CHILDREN” STUDYING IN A SCHOOL SETTING. HE SAW THE CHILDREN IN AN OPEN LOT, A SPACE THAT WAS YET TO BE IMPROVED. IN 2003, FIVE YEARS AFTER THE VISION, POTTER’S HAND ACADEMY WAS BORN – THE EDUCATIONAL ARM OF THE MINISTRY THAT REACHES TO THE FAMILIES OF THE SCHOOL CHILDREN.</p>
+
+  <p>THE ENTHUSIASTIC SUPPORT OF THE CHURCH COUNCIL, TOGETHER WITH THE WHOLE CONGREGATION, GAVE WAY TO AN EXPANDED MINISTRY THAT ENVISIONS “CHRIST IN EVERY HOME.”</p>
+
+  <p>IN OCTOBER 2007, THE MINISTRY GAVE BIRTH TO A NEW PLANT CHURCH IN TANZA, CAVITE.</p>
+
+  <p>THE MINISTRY CELEBRATED ITS 11TH ANNIVERSARY IN JULY 2009.</p>
+
+  <p class="text-center font-bold text-lg mt-10 mb-4">A BRIEF HISTORY OF THE CHURCH OF GOD</p>
+
+  <p>THE CHURCH OF GOD BEGAN ON AUGUST 19, 1886, IN MONROE COUNTY, TENNESSEE, NEAR THE NORTH CAROLINA BORDER. FORMER BAPTIST RICHARD GREEN SPURLING PREACHED IN A MILLHOUSE ALONG BARNEY CREEK, AND EIGHT PEOPLE FORMED A CHRISTIAN UNION FOR THE PURPOSE OF FOLLOWING THE NEW TESTAMENT AS THEIR RULE FOR FAITH AND PRACTICE, GIVING EACH OTHER EQUAL RIGHTS TO INTERPRET SCRIPTURE. TWENTY-ONE YEARS LATER, THE GROWING MOVEMENT FORMALLY ADOPTED THE NAME CHURCH OF GOD.</p>
+
+  <p>TEN YEARS AFTER, A REVIVAL AT THE SHEARER SCHOOLHOUSE IN CAMP CREEK INTRODUCED THE DOCTRINE OF SANCTIFICATION. DESPITE PERSECUTION, REVIVAL PREVAILED. THIS MOVEMENT LED TO SPEAKING IN TONGUES AND DIVINE HEALING, WHICH PAVED THE WAY FOR THE GLOBAL PENTECOSTAL MOVEMENT.</p>
+
+  <p>UNDER THE LEADERSHIP OF A.J. TOMLINSON, THE FIRST GENERAL OVERSEER, THE CHURCH ADOPTED CENTRALIZED GOVERNANCE, LAUNCHED WORLD EVANGELIZATION (STARTING IN THE BAHAMAS, 1909), THE CHURCH OF GOD EVANGEL (1910), AND EDUCATION FOR MINISTERS (1918).</p>
+
+  <p>TODAY, CHURCH OF GOD MINISTRIES INCLUDE MORE THAN 7 MILLION MEMBERS IN 178 COUNTRIES, WITH 36,000 CONGREGATIONS WORLDWIDE, SUPPORTED BY GLOBAL DIVISIONS OF EVANGELIZATION, CARE, DISCIPLESHIP, EDUCATION, AND SUPPORT SERVICES.</p>
+</section>
+
+<!-- What's New Section -->
+<section class="py-12 px-6 md:px-20 lg:px-32 bg-white text-center">
+  <h2 class="text-2xl font-bold text-[#003366] uppercase mb-8">What's New</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Card 1 -->
+    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+      <img src="images/renamethis1.jpg" alt="Update Image 1" class="w-full h-48 object-cover">
+      <div class="p-4 text-justify">
+        <p>Insert your update paragraph here. You can replace this text anytime with something new or timely.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+      <img src="images/renamethis2.jpg" alt="Update Image 2" class="w-full h-48 object-cover">
+      <div class="p-4 text-justify">
+        <p>This is another placeholder paragraph for your second update. Easily replace this image and text later.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+      <img src="images/renamethis3.jpg" alt="Update Image 3" class="w-full h-48 object-cover">
+      <div class="p-4 text-justify">
+        <p>Add anything you want here—news, events, celebrations, or upcoming activities in your ministry.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+      <img src="images/renamethis4.jpg" alt="Update Image 4" class="w-full h-48 object-cover">
+      <div class="p-4 text-justify">
+        <p>Share the latest highlights from your services, gatherings, or new ministry projects here.</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+      <img src="images/renamethis5.jpg" alt="Update Image 5" class="w-full h-48 object-cover">
+      <div class="p-4 text-justify">
+        <p>This section is easy to manage. Just rename the image and update the paragraph whenever needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer style="background-color: #ADD8E6; text-align: center; padding: 20px; font-family: Arial, sans-serif; color: #333;">
+  <div style="margin-bottom: 15px;">
+      <a href="https://www.facebook.com/ChurchOfGodGeneralTrias" target="_blank" style="color: #333; text-decoration: none; font-size: 16px; margin-right: 20px;">Facebook</a>
+      <a href="mailto:info@churchofgodgentratas.org" style="color: #333; text-decoration: none; font-size: 16px;">Email</a>
+  </div>
+  <div style="font-size: 14px; color: #555;">
+      <p>&copy; 2025 Church of God General Trias. All rights reserved.</p>
+      <p><strong>Disclaimer:</strong> Unauthorized copying or reproduction of this page is strictly prohibited.</p>
+  </div>
+</footer>

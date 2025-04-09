@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Our Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Include Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-variant: small-caps;
+    }
+
+    /* Apply the new font to the info section */
+    .info-text {
+      font-family: 'Merriweather', serif;
+      line-height: 1.7;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* Custom styling for dark blue text */
+    .dark-blue {
+      color: #003366;
+    }
+
+    /* Styling for navbar links */
+    .nav-link {
+      font-family: 'Calibri', sans-serif;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: black;
+    }
+    
+    .nav-link:hover {
+      color: #003366;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #003366;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+  </style>
+
+  <!-- Navbar -->
+  <header class="bg-white text-blue-800 py-4 px-6 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="images/coglogo.png" alt="Church Logo" class="h-20 w-20">
+      <div class="leading-tight">
+        <h1 class="text-2xl font-bold tracking-wide dark-blue">Church of God</h1>
+        <p class="text-sm dark-blue">WORLD MISSIONS, PHILIPPINES</p>
+      </div>
+    </div>
+
+    <nav class="space-x-4">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="aboutus.html" class="nav-link">ABOUT US</a>
+      <div class="dropdown inline-block">
+        <a href="worda.html" class="nav-link">WORDA</a>
+        <div class="dropdown-content">
+          <a href="worship.html">WORSHIP</a>
+          <a href="outreach.html">OUTREACH</a>
+          <a href="relationship.html">RELATIONSHIP</a>
+          <a href="discipleship.html">DISCIPLESHIP</a>
+          <a href="administration.html">ADMINISTRATION</a>
+        </div>
+      </div>
+      <a href="sermon.html" class="nav-link">SERMON</a>
+      <a href="mikay's.html" class="nav-link">MIKAY'S EXTENSION</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative h-80 bg-cover bg-center" style="background-image: url('images/wwa.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h2 class="text-white text-4xl font-bold shadow-black drop-shadow-lg">WHO WE ARE</h2>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="py-16 px-6 max-w-4xl mx-auto info-text">
+    <h3 class="text-2xl font-bold mb-4 uppercase">Vision</h3>
+    <p>The men and women of Church of God Philippines aspire to transform the country into a born-again nation.</p>
+
+    <h3 class="text-2xl font-bold mt-8 mb-4 uppercase">Mission</h3>
+    <p>To realize this vision, the Church of God shall take every opportunity an occasion to evangelize and minister to every lost soul in the name of Jesus Christ.</p>
+
+    <h3 class="text-2xl font-bold mt-8 mb-4 uppercase">Core Values</h3>
+    <p>
+      The foundation of our ministry is <strong>CHARACTER</strong><br>
+      The nature of our ministry is <strong>SERVICE</strong><br>
+      The motive of our ministry is <strong>LOVE</strong><br>
+      The measure of our ministry is <strong>SACRIFICE</strong><br>
+      The authority of our ministry is <strong>SUBMISSION</strong><br>
+      The purpose of our ministry is <strong>GLORIFY GOD</strong><br>
+      The tools of our ministry are <strong>WORD OF GOD</strong> and <strong>PRAYER</strong><br>
+      The privilege of our ministry is <strong>GROWTH</strong><br>
+      The power of our ministry is the <strong>HOLY SPIRIT</strong><br>
+      The model of our ministry is <strong>JESUS CHRIST</strong>.
+    </p>
+
+    <h3 class="text-2xl font-bold mt-8 mb-4 uppercTACTase">Declaration of Faith</h3>
+    <p>The Church of God believes the whole Bible to be completely and equally inspired and that it is the written Word of God. The Church of God has adopted the following Declaration of Faith as its standard and official expression of its doctrine.</p>
+
+    <p><strong>We Believe:</strong></p>
+    <ul class="list-disc list-inside pl-4">
+      <li>In the verbal inspiration of the Bible.</li>
+      <li>In one God eternally existing in three persons; namely, the Father, Son, and Holy Ghost.</li>
+      <li>That Jesus Christ is the only begotten Son of the Father, conceived of the Holy Ghost, and born of the Virgin Mary. That Jesus was crucified, buried, and raised from the dead.</li>
+      <li>That He ascended to heaven and is today at the right hand of the Father as the Intercessor.</li>
+      <li>That all have sinned and come short of the glory of God and that repentance is commanded of God for all and necessary for forgiveness of sins.</li>
+      <li>That justification, regeneration, and the new birth are wrought by faith in the blood of Jesus Christ.</li>
+      <li>In sanctification subsequent to the new birth, through faith in the blood of Christ; through the Word, and by the Holy Ghost.</li>
+      <li>Holiness to be God’s standard of living for His people.</li>
+      <li>In the baptism with the Holy Ghost subsequent to a clean heart.</li>
+      <li>In speaking with other tongues as the Spirit gives utterance and that it is the initial evidence of the baptism of the Holy Ghost.</li>
+      <li>In water baptism by immersion, and all who repent should be baptized in the name of the Father, and of the Son, and of the Holy Ghost.</li>
+      <li>Divine healing is provided for all in the atonement.</li>
+      <li>In the Lord’s Supper and washing of the saints’ feet.</li>
+      <li>In the premillennial second coming of Jesus. First, to resurrect the righteous dead and to catch away the living saints to Him in the air. Second, to reign on the earth a thousand years.</li>
+      <li>In the bodily resurrection; eternal life for the righteous, and eternal punishment for the wicked.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
+
+<footer style="background-color: #ADD8E6; text-align: center; padding: 20px; font-family: Arial, sans-serif; color: #333;">
+  <div style="margin-bottom: 15px;">
+      <a href="https://www.facebook.com/ChurchOfGodGeneralTrias" target="_blank" style="color: #333; text-decoration: none; font-size: 16px; margin-right: 20px;">Facebook</a>
+      <a href="mailto:info@churchofgodgentratas.org" style="color: #333; text-decoration: none; font-size: 16px;">Email</a>
+  </div>
+  <div style="font-size: 14px; color: #555;">
+      <p>&copy; 2025 Church of God General Trias. All rights reserved.</p>
+      <p><strong>Disclaimer:</strong> Unauthorized copying or reproduction of this page is strictly prohibited.</p>
+  </div>
+</footer>
+

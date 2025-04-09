@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relationship Ministry | Church Of God</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-variant: small-caps;
+    }
+
+    .info-text {
+      font-family: 'Merriweather', serif;
+      line-height: 1.7;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .dark-blue {
+      color: #003366;
+    }
+
+    .nav-link {
+      font-family: 'Calibri', sans-serif;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: #003366;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #003366;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="bg-white text-blue-800 py-4 px-6 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="images/coglogo.png" alt="Church Logo" class="h-20 w-20">
+      <div class="leading-tight">
+        <h1 class="text-2xl font-bold tracking-wide dark-blue">Church of God</h1>
+        <p class="text-sm dark-blue">WORLD MISSIONS, PHILIPPINES</p>
+      </div>
+    </div>
+
+    <nav class="space-x-4">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="aboutus.html" class="nav-link">ABOUT US</a>
+      <div class="dropdown inline-block">
+        <a href="worda.html" class="nav-link">WORDA</a>
+        <div class="dropdown-content">
+          <a href="worship.html">WORSHIP</a>
+          <a href="outreach.html">OUTREACH</a>
+          <a href="relationship.html">RELATIONSHIP</a>
+          <a href="discipleship.html">DISCIPLESHIP</a>
+          <a href="administration.html">ADMINISTRATION</a>
+        </div>
+      </div>
+      <a href="sermon.html" class="nav-link">SERMON</a>
+      <a href="mikay's.html" class="nav-link">MIKAY'S EXTENSION</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative h-80 bg-cover bg-center" style="background-image: url('images/relationship.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <h2 class="text-white text-4xl font-bold shadow-black drop-shadow-lg">RELATIONSHIP</h2>
+    </div>
+  </section>
+
+  <!-- Outreach Ministry Section -->
+  <div class="px-6 py-8">
+    <h2 class="text-3xl font-bold dark-blue">RELATIONSHIP<h2>
+    <p class="info-text dark-blue">
+      To make people feel that we are one family in this church.
+    </p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Men's Ministry -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="images/mens.jpg" alt="Men's Ministry" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold dark-blue mb-2">Men’s Ministry</h3>
+          <p class="info-text">Empowering men to lead with strength, integrity, and purpose through Christ-centered fellowship and discipleship.</p>
+        </div>
+      </div>
+
+      <!-- Ladies' Ministry -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="images/Ladies.jpg" alt="Ladies Ministry" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold dark-blue mb-2">Ladies’ Ministry</h3>
+          <p class="info-text">Encouraging women to grow in faith and sisterhood while living out their God-given calling with grace and strength.</p>
+        </div>
+      </div>
+
+      <!-- Youth Ministry -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="images/YE.jpg" alt="Youth Empowered" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold dark-blue mb-2">Youth Empowered</h3>
+          <p class="info-text">Raising a generation of bold, faith-filled youth equipped to impact their world for Christ through service, worship, and truth.</p>
+        </div>
+      </div>
+
+      <!-- J12 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="images/J12.jpg" alt="J12 Ministry" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold dark-blue mb-2">J12</h3>
+          <p class="info-text">Instilling strong spiritual foundations in preteens, helping them discover their identity and purpose in Jesus.</p>
+        </div>
+      </div>
+
+      <!-- Children’s Ministry -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="images/childrens.jpg" alt="Children's Ministry" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold dark-blue mb-2">Children’s Ministry</h3>
+          <p class="info-text">Creating a fun, safe, and nurturing environment where children can grow in God’s Word and experience His love.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
