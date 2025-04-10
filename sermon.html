@@ -1,157 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Video Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-            font-variant: small-caps;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Church Of God</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-        .dark-blue {
-            color: #003366;
-        }
+  <style>
+    body {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-variant: small-caps;
+      margin: 0;
+      padding: 0;
+    }
 
-        .nav-link {
-            font-family: 'Calibri', sans-serif;
-            text-transform: capitalize;
-            font-weight: bold;
-            color: black;
-        }
+    .dark-blue {
+      color: #003366;
+    }
 
-        .nav-link:hover {
-            color: #003366;
-        }
+    .nav-link {
+      font-family: 'Calibri', sans-serif;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: black;
+    }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+    .nav-link:hover {
+      color: #003366;
+    }
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+    .background {
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
 
-        .dropdown-content a {
-            color: #003366;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+    .background h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
 
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
+    .background .button {
+      background-color: #FFD700;
+      color: #003366;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-        .background {
-            background-image: url('images/background.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-        }
-
-        .background h1 {
-            font-size: 3rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        .background .button {
-            background-color: #FFD700;
-            color: #003366;
-            padding: 10px 20px;
-            font-size: 1rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .background .button:hover {
-            background-color: #e6b800;
-        }
-
-        .info-section {
-            font-family: 'Merriweather', serif;
-            color: #003366;
-            text-align: justify;
-            margin-left: 20px;
-            margin-right: 20px;
-            text-transform: uppercase;
-        }
-
-        .video-container {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-        }
-
-        iframe.main-video {
-            width: 80%;
-            height: 450px;
-        }
-
-        .video-grid {
-            margin-top: 40px;
-            padding: 0 20px 40px 20px;
-        }
-
-        .video-grid h2 {
-            margin-bottom: 20px;
-        }
-
-        .grid-wrapper {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .grid-wrapper iframe {
-            width: 100%;
-            height: 200px;
-            border: none;
-        }
-
-        @media (max-width: 768px) {
-            .grid-wrapper {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .grid-wrapper {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    .background .button:hover {
+      background-color: #e6b800;
+    }
+  </style>
 </head>
 <body>
-
   <!-- Navbar -->
   <header class="bg-white text-blue-800 py-4 px-6 flex justify-between items-center shadow-md">
     <div class="flex items-center space-x-3">
@@ -162,23 +82,61 @@
       </div>
     </div>
 
-    <nav class="space-x-4">
+    <!-- Hamburger Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-button" class="text-blue-800 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-4">
       <a href="index.html" class="nav-link">HOME</a>
       <a href="aboutus.html" class="nav-link">ABOUT US</a>
-      <div class="dropdown inline-block">
-        <a href="worda.html" class="nav-link">WORDA</a>
-        <div class="dropdown-content">
-          <a href="worship.html">WORSHIP</a>
-          <a href="outreach.html">OUTREACH</a>
-          <a href="relationship.html">RELATIONSHIP</a>
-          <a href="discipleship.html">DISCIPLESHIP</a>
-          <a href="administration.html">ADMINISTRATION</a>
+      <div class="relative group">
+        <a href="#" class="nav-link">WORDA</a>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded-md z-10">
+          <a href="worda.html" class="block px-4 py-2 nav-link">W.O.R.D.A</a>
+          <a href="worship.html" class="block px-4 py-2 nav-link">WORSHIP</a>
+          <a href="outreach.html" class="block px-4 py-2 nav-link">OUTREACH</a>
+          <a href="relationship.html" class="block px-4 py-2 nav-link">RELATIONSHIP</a>
+          <a href="discipleship.html" class="block px-4 py-2 nav-link">DISCIPLESHIP</a>
+          <a href="administration.html" class="block px-4 py-2 nav-link">ADMINISTRATION</a>
         </div>
       </div>
       <a href="sermon.html" class="nav-link">SERMON</a>
       <a href="mikay's.html" class="nav-link">MIKAY'S EXTENSION</a>
     </nav>
   </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 py-4 bg-white shadow-md">
+    <a href="index.html" class="block py-2 nav-link">HOME</a>
+    <a href="aboutus.html" class="block py-2 nav-link">ABOUT US</a>
+    <div class="border-t border-gray-200 my-2"></div>
+    <details class="w-full">
+      <summary class="nav-link cursor-pointer">WORDA</summary>
+      <div class="ml-4 mt-2">
+        <a href="worda.html" class="block py-1 nav-link">W.O.R.D.A</a>
+        <a href="worship.html" class="block py-1 nav-link">WORSHIP</a>
+        <a href="outreach.html" class="block py-1 nav-link">OUTREACH</a>
+        <a href="relationship.html" class="block py-1 nav-link">RELATIONSHIP</a>
+        <a href="discipleship.html" class="block py-1 nav-link">DISCIPLESHIP</a>
+        <a href="administration.html" class="block py-1 nav-link">ADMINISTRATION</a>
+      </div>
+    </details>
+    <a href="sermon.html" class="block py-2 nav-link">SERMON</a>
+    <a href="mikay's.html" class="block py-2 nav-link">MIKAY'S EXTENSION</a>
+  </div>
+
+  <script>
+    document.getElementById('menu-button').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
   <!-- Video Section -->
   <h1>LATEST ONLINE SERVICE</h1>
