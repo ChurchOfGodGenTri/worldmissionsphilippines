@@ -69,6 +69,15 @@
     .background .button:hover {
       background-color: #e6b800;
     }
+
+    .image-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
@@ -141,50 +150,75 @@
   <!-- Hero Banner -->
   <section class="relative h-80 bg-cover bg-center" style="background-image: url('images/outreach.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-      <h2 class="text-white text-4xl font-bold shadow-black drop-shadow-lg">OUTREACH</h2>
+      <h2 class="text-white text-4xl md:text-5xl font-bold tracking-wide">OUTREACH</h2>
     </div>
   </section>
 
   <!-- Outreach Ministry Section -->
-  <div class="px-6 py-8">
-    <h2 class="text-3xl font-bold dark-blue">OUTREACH</h2>
-    <p class="info-text dark-blue">
-      To mobilize the church in spreading the Gospel of Christ.
-    </p>
-
-    <!-- C2S and Random Information Images -->
-    <div class="image-grid flex flex-col md:flex-row gap-8 items-start justify-center mt-6">
-      <div class="flex flex-col items-center">
-        <img src="images/devo.jpg" alt="C2S Image" class="rounded-lg">
-        <h3 class="section-heading text-center">DEVOTIONAL MANUAL</h3>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="images/mentor.jpg" alt="Random Image" class="rounded-lg">
-        <h3 class="section-heading text-center">MENTOR'S MANUAL</h3>
-      </div>
+  <section class="px-6 py-16 max-w-7xl mx-auto bg-gradient-to-b from-blue-50 via-white to-blue-100">
+    <div class="text-center mb-16">
+      <p class="text-lg font-medium text-blue-900">TO MOBILIZE THE CHURCH IN SPREADING THE GOSPEL OF CHRIST.</p>
     </div>
 
-    <!-- C2S Info and Random Info -->
-    <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8 mt-8">
-      <div class="md:w-1/2">
-        <p class="info-text dark-blue">
-          C2S (Connect 2 Souls) is a mentorship program designed to help individuals find their spiritual path. It involves two parts: first, individuals are mentored to be born again. After that, they themselves become mentors, guided by the manual and the HAYO program.
-        </p>
+    <!-- Devotional Manual Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+      <div class="flex flex-col items-center text-center">
+        <img src="images/devo.jpg" alt="Devotional Manual" class="rounded-xl shadow-2xl mb-6 w-80 image-hover">
+        <h3 class="text-2xl font-bold dark-blue">DEVOTIONAL MANUAL</h3>
       </div>
-      <div class="md:w-1/2">
-        <p class="info-text dark-blue">
-          This section contains any other relevant information that may be helpful for the audience to know about our mission, community programs, and the impact we're making.
+      <div>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          The Church created the C2S program: Connecting Two Souls — one outside the church and one within. A beautiful way of reaching the lost and connecting hearts.
         </p>
       </div>
     </div>
 
-    <!-- Large Image Placeholder -->
-    <div class="w-full mb-8 mt-10 flex justify-center">
-      <img src="images/hayo.jpg" alt="Large Image" class="rounded-lg max-w-3xl w-full">
+    <!-- Mentor's Manual Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+      <div class="order-2 md:order-1">
+        <p class="text-lg text-gray-700 leading-relaxed">
+          The C2S Mentor's Manual focuses on mentoring mentors themselves, strengthening discipleship as we fulfill the Great Commission.
+        </p>
+      </div>
+      <div class="flex flex-col items-center text-center order-1 md:order-2">
+        <img src="images/mentor.jpg" alt="Mentor Manual" class="rounded-xl shadow-2xl mb-6 w-80 image-hover">
+        <h3 class="text-2xl font-bold dark-blue">MENTOR'S MANUAL</h3>
+      </div>
     </div>
 
-    <!-- Random Text Below Large Image -->
-    <p class="info-text dark-blue">
-      This is some random text to provide more context about our ministry and the work we are doing to uplift the community.
-    </p>
-  </div>
+    <!-- HAYO Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+      <div class="flex flex-col items-center text-center">
+        <img src="images/hayo.jpg" alt="HAYO Program" class="rounded-xl shadow-2xl mb-6 w-80 image-hover">
+        <h3 class="text-2xl font-bold dark-blue">HAYO PROGRAM</h3>
+      </div>
+      <div>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          HAYO is about reaching the lost directly — walking, praying, handing out tracts, and witnessing God's love in action.
+        </p>
+      </div>
+    </div>
+
+    <!-- Soaking Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+      <div class="flex flex-col items-center text-center">
+        <img src="images/Soaking.jpg" alt="Soaking Service" class="rounded-xl shadow-2xl mb-6 w-80 image-hover">
+        <h3 class="text-2xl font-bold dark-blue">SOAKING</h3>
+      </div>
+      <div>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Every Wednesday, our Soaking Service invites families and friends to experience the tangible presence of God. It's simple, heartfelt, and life-changing.
+        </p>
+      </div>
+    </div>
+
+    <!-- Closing Text -->
+    <div class="text-center mt-10">
+      <p class="text-lg text-blue-900 leading-relaxed max-w-3xl mx-auto">
+        Our ministry remains committed to uplifting communities, nurturing souls, and spreading the boundless love of Christ. Thank you for walking this journey with us.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+
