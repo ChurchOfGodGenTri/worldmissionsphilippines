@@ -54,6 +54,20 @@
       padding-left: 3rem;
       justify-content: flex-start;
     }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 640px) {
+      .nav-link {
+        font-size: 0.875rem;
+      }
+      .profile-card {
+        margin-bottom: 1rem;
+      }
+      .profile-card img {
+        width: 80px;
+        height: 80px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -144,7 +158,7 @@
       <h3 class="text-3xl font-bold mb-10 text-center dark-blue">Meet Our Leaders</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <!-- Info Card - Sample Repeated -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center">
+        <div class="bg-white rounded-lg shadow-md p-4 text-center profile-card">
           <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Info Nardmo" class="w-24 h-24 mx-auto rounded-full shadow-md mb-4">
           <h4 class="text-xl font-bold">Info Nardmo</h4>
           <p class="text-gray-600 text-sm">Head of Church Affairs</p>
@@ -158,8 +172,7 @@
         <!-- 20 More Random Profiles -->
         <!-- These will use randomuser.me photos -->
         <!-- Repeat similar card structure with unique names and images -->
-        <!-- Example: -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center">
+        <div class="bg-white rounded-lg shadow-md p-4 text-center profile-card">
           <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Leader" class="w-24 h-24 mx-auto rounded-full shadow-md mb-4">
           <h4 class="text-xl font-bold">Jane Domingo</h4>
           <p class="text-gray-600 text-sm">Worship Coordinator</p>
