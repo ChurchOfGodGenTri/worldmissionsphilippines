@@ -1,16 +1,179 @@
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
-PLEASE CHECK BACK ONGOING CONSTRUCTION
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Church Of God</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-variant: small-caps;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dark-blue {
+      color: #003366;
+    }
+
+    .nav-link {
+      font-family: 'Calibri', sans-serif;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: #003366;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .hero-banner {
+      position: sticky;
+      top: 0;
+      z-index: -1;
+      height: 60vh;
+      background-image: url('images/administration.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .banner-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 3rem;
+      justify-content: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="bg-white text-blue-800 py-4 px-6 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="images/coglogo.png" alt="Church Logo" class="h-20 w-20">
+      <div class="leading-tight">
+        <h1 class="text-2xl font-bold tracking-wide dark-blue">Church of God</h1>
+        <p class="text-sm dark-blue">WORLD MISSIONS, PHILIPPINES</p>
+      </div>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-button" class="text-blue-800 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-4">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="aboutus.html" class="nav-link">ABOUT US</a>
+      <div class="relative group">
+        <a href="#" class="nav-link">WORDA</a>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded-md z-10">
+          <a href="worda.html" class="block px-4 py-2 nav-link">W.O.R.D.A</a>
+          <a href="worship.html" class="block px-4 py-2 nav-link">WORSHIP</a>
+          <a href="outreach.html" class="block px-4 py-2 nav-link">OUTREACH</a>
+          <a href="relationship.html" class="block px-4 py-2 nav-link">RELATIONSHIP</a>
+          <a href="discipleship.html" class="block px-4 py-2 nav-link">DISCIPLESHIP</a>
+          <a href="administration.html" class="block px-4 py-2 nav-link">ADMINISTRATION</a>
+        </div>
+      </div>
+      <a href="sermon.html" class="nav-link">SERMON</a>
+      <a href="mikay's.html" class="nav-link">MIKAY'S EXTENSION</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 py-4 bg-white shadow-md">
+    <a href="index.html" class="block py-2 nav-link">HOME</a>
+    <a href="aboutus.html" class="block py-2 nav-link">ABOUT US</a>
+    <div class="border-t border-gray-200 my-2"></div>
+    <details class="w-full">
+      <summary class="nav-link cursor-pointer">WORDA</summary>
+      <div class="ml-4 mt-2">
+        <a href="worda.html" class="block py-1 nav-link">W.O.R.D.A</a>
+        <a href="worship.html" class="block py-1 nav-link">WORSHIP</a>
+        <a href="outreach.html" class="block py-1 nav-link">OUTREACH</a>
+        <a href="relationship.html" class="block py-1 nav-link">RELATIONSHIP</a>
+        <a href="discipleship.html" class="block py-1 nav-link">DISCIPLESHIP</a>
+        <a href="administration.html" class="block py-1 nav-link">ADMINISTRATION</a>
+      </div>
+    </details>
+    <a href="sermon.html" class="block py-2 nav-link">SERMON</a>
+    <a href="mikay's.html" class="block py-2 nav-link">MIKAY'S EXTENSION</a>
+  </div>
+
+  <script>
+    document.getElementById('menu-button').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="banner-overlay">
+      <h2 class="text-white text-4xl md:text-5xl font-bold shadow-black drop-shadow-lg">ADMINISTRATION</h2>
+    </div>
+  </section>
+
+  <!-- Org Chart -->
+  <section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-center dark-blue">Organizational Chart</h3>
+      <img src="images/org_chart.jpg" alt="Org Chart" class="w-full rounded-xl shadow-lg">
+    </div>
+  </section>
+
+  <!-- Profiles Section -->
+  <section class="bg-gray-50 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-10 text-center dark-blue">Meet Our Leaders</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Info Card - Sample Repeated -->
+        <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Info Nardmo" class="w-24 h-24 mx-auto rounded-full shadow-md mb-4">
+          <h4 class="text-xl font-bold">Info Nardmo</h4>
+          <p class="text-gray-600 text-sm">Head of Church Affairs</p>
+          <p class="mt-2 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+          <div class="flex justify-center mt-3 space-x-3 text-blue-800">
+            <a href="#">📞</a>
+            <a href="#">✉️</a>
+            <a href="#">🌐</a>
+          </div>
+        </div>
+        <!-- 20 More Random Profiles -->
+        <!-- These will use randomuser.me photos -->
+        <!-- Repeat similar card structure with unique names and images -->
+        <!-- Example: -->
+        <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Leader" class="w-24 h-24 mx-auto rounded-full shadow-md mb-4">
+          <h4 class="text-xl font-bold">Jane Domingo</h4>
+          <p class="text-gray-600 text-sm">Worship Coordinator</p>
+          <p class="mt-2 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+          <div class="flex justify-center mt-3 space-x-3 text-blue-800">
+            <a href="#">📞</a>
+            <a href="#">✉️</a>
+            <a href="#">🌐</a>
+          </div>
+        </div>
+        <!-- Add 19 more similar cards here with different names/images -->
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
