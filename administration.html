@@ -55,14 +55,20 @@
       justify-content: flex-start;
     }
 
-    /* Mobile responsive adjustments */
+    /* Disable background effect on mobile */
     @media (max-width: 640px) {
+      .hero-banner {
+        background-attachment: scroll; /* Disables fixed background on mobile */
+      }
+
       .nav-link {
         font-size: 0.875rem;
       }
+
       .profile-card {
         margin-bottom: 1rem;
       }
+
       .profile-card img {
         width: 80px;
         height: 80px;
@@ -170,8 +176,6 @@
           </div>
         </div>
         <!-- 20 More Random Profiles -->
-        <!-- These will use randomuser.me photos -->
-        <!-- Repeat similar card structure with unique names and images -->
         <div class="bg-white rounded-lg shadow-md p-4 text-center profile-card">
           <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Leader" class="w-24 h-24 mx-auto rounded-full shadow-md mb-4">
           <h4 class="text-xl font-bold">Jane Domingo</h4>
