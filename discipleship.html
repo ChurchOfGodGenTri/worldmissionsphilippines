@@ -30,44 +30,29 @@
       color: #003366;
     }
 
-    .dropdown-content a:hover {
-      background-color: #ddd;
+    .carousel-image {
+      object-fit: contain;
+      width: 80%; /* Make the image smaller but keep aspect ratio */
+      height: auto;
+      margin: 0 auto; /* Centering the images */
     }
 
-    .background {
-      background-image: url('images/background.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 0 20px;
-    }
-
-    .background h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
-
-    .background .button {
-      background-color: #FFD700;
-      color: #003366;
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    .dot {
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      display: inline-block;
       transition: background-color 0.3s ease;
     }
 
-    .background .button:hover {
-      background-color: #e6b800;
+    .dot.active {
+      background-color: #fff;
+    }
+
+    .justified-text {
+      text-align: justify;
     }
   </style>
 </head>
@@ -82,7 +67,6 @@
       </div>
     </div>
 
-    <!-- Hamburger Menu Button -->
     <div class="md:hidden">
       <button id="menu-button" class="text-blue-800 focus:outline-none">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -91,7 +75,6 @@
       </button>
     </div>
 
-    <!-- Desktop Nav -->
     <nav class="hidden md:flex space-x-4">
       <a href="index.html" class="nav-link">HOME</a>
       <a href="aboutus.html" class="nav-link">ABOUT US</a>
@@ -145,48 +128,112 @@
     </div>
   </section>
 
-  <!-- CLDP Program Section -->
+  <!-- CLDP Carousel Section -->
   <div class="px-6 py-8">
     <h2 class="text-4xl font-bold mb-4">CHRISTIAN LIFE DEVELOPMENT PROGRAM</h2>
 
-    <p class="info-text">
-      Christian Life Development Program or CLDP is a major step toward developing and equipping workers to become lay leaders in the local church ministry. The Great Commission belongs to all Christians and demands that disciples be trained, motivated, and enabled to grow in the ministry.
+    <p class="mb-6">
+      CHRISTIAN LIFE DEVELOPMENT PROGRAM OR CLDP IS A MAJOR STEP TOWARD DEVELOPING AND EQUIPPING WORKERS TO BECOME LEADERS IN THE LOCAL CHURCH MINISTRY.
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-      <div class="flex flex-col items-center">
-        <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/488991425_122236808012017841_6394860456951701474_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE7BOSfdfQPbaoXt-v2e07o_64D9a4dYUb_rgP1rh1hRuMSjewPLGeHPtDbrpXJJHCzvIqxyfRBakdw1NvQcpDb&_nc_ohc=cYrImgJPHFEQ7kNvwF4OxUg&_nc_oc=Adltn0r1jYIaVXbU14VQIDaJ-Noyhgo6nPMutiN8rHqUgu-HnMd45R9CLGvWYgmD1b2m9GTcN4TfokdpXn66IJXF&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&_nc_gid=ocNEtLEMVoVkxwHD_e-rng&oh=00_AfGTqxJ2n44y4u6bCijmm2cHbwdwoaDOanlQ4zC6g9RJvA&oe=67FC0EF4" alt="CLDP 1 Image" class="w-64 h-64 object-cover mb-4 rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold mb-2">CLDP 1</h3>
-        <p class="info-text text-center">
-          CLDP 1 IS THE FIRST OF THREE CHURCH OF GOD’S BASIC DISCIPLESHIP COURSES. IT IS PRIMARILY DESIGNED TO CLEARLY EXPLAIN THE BASIC FOUNDATIONS OF CHRISTIAN LIVING. EACH LESSON ENDS WITH A MEMORY VERSE, A DEVOTIONAL READING AND AN ASSIGNMENT. THIS COURSE CULMINATES WITH THE ESSENTIAL ACTIVITIES, NAMELY THE PRACTICUM ON WITNESSING, WATER BAPTISM, AND THE LIFE IN THE SPIRIT SEMINAR.
-        </p>
+    <div class="relative max-w-xl mx-auto overflow-hidden">
+      <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+        <img src="images/CLDP1.jpg" alt="CLDP 1" class="carousel-image flex-shrink-0 w-full">
+        <img src="images/CLDP2.jpg" alt="CLDP 2" class="carousel-image flex-shrink-0 w-full">
+        <img src="images/CLDP3.jpg" alt="CLDP 3" class="carousel-image flex-shrink-0 w-full">
       </div>
 
-      <div class="flex flex-col items-center">
-        <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/489860795_122236808042017841_5091155043570370099_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHjHdk5HEJGx9dAhtAvNeVAzguo37DK7RTOC6jfsMrtFPsP6p-qNix963Ki0PL1DY7Jjta8llrYZRmfTooKREog&_nc_ohc=7FyohA8I3tkQ7kNvwGbkBQI&_nc_oc=AdmcqFQEZ9XRkwBdYHUANmQe_aStiIbiUekbix7614nEe8eJ0rOcFTr1CbSIci5BV2WuUBzB7m7dVy69phn8zPjG&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&_nc_gid=qfmONp2X1wpBhJsLfev7lw&oh=00_AfGVQ_4G6W1nY2MdUD7VLOnNc6jChZ-86Zbos020999k4w&oe=67FC00AB" alt="CLDP 2 Image" class="w-64 h-64 object-cover mb-4 rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold mb-2">CLDP 2</h3>
-        <p class="info-text text-center">
-          CLDP 2 IS THE SECOND OF THE THREE CHURCH OF GOD’S BASIC DISCIPLESHIP COURSES. SINCE THIS CLASS BUILDS AND FOCUSES ON BEING CHRIST-LIKE IN CHARACTER, YOU MUST FIRST COMPLETE CLDP 1 BEFORE TAKING THIS PROGRAM. OUR MOTIVATION COMES FROM EPHESIANS 4:14-15… “THEN WE WILL NO LONGER BE LIKE CHILDREN… INSTEAD, WE WILL HOLD TO THE TRUTH IN LOVE, BECOMING MORE AND MORE IN EVERY WAY LIKE CHRIST, WHO IS THE HEAD OF HIS BODY, THE CHURCH”. EACH LESSON ENDS WITH A MEMORY VERSE, A DEVOTIONAL READING AND AN ASSIGNMENT. THIS COURSE CULMINATES WITH THE ANOINTING SERVICE AS AN ESSENTIAL ACTIVITY.
-        </p>
-      </div>
-
-      <div class="flex flex-col items-center">
-        <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/489702884_122236807838017841_3091021128399882840_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHd6kEgNJpkHqv_3mK7zYyykl7HVupp5M2SXsdW6mnkzerTK-_OXtShsZR1dGK7u2X22YsgxO9Qdx69PKfk7rIl&_nc_ohc=ZY9mZkoOgksQ7kNvwGBzRB-&_nc_oc=AdkVcKHv3zdP9pklpgvKeaeCdKErS5LrMPT_wLOfALKOaFYZVSMaw4kS79-qP6XrThHLnixEF2PB_aqTnFoIXlge&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=OLTzQsMh0KPoT4mudotwpw&oh=00_AfGE0H4BJRy94RjFRwuRk9UI9iw5QoHNK9nH7mtMJ12poQ&oe=67FBEADB" alt="CLDP 3 Image" class="w-64 h-64 object-cover mb-4 rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold mb-2">CLDP 3</h3>
-        <p class="info-text text-center">
-          CLDP 3 IS THE THIRD OF THE THREE CHURCH OF GOD’S BASIC DISCIPLESHIP COURSES. THIS CLASS IS DESIGNED TO MAKE YOU UNDERSTAND ABOUT YOUR CALLING IN THE MINISTRY AS WELL AS THE HEART AND CHARACTER QUALIFICATIONS OF A LEADER CALLED BY GOD. THUS, IT IS IMPERATIVE THAT YOU FINISH CLDP 1 AND CLDP 2 BEFORE TAKING THIS COURSE. OUR MOTIVATION COMES FROM EPHESIANS 4:11-12, WHICH STATES, “GOD IS THE ONE WHO GAVE THE GIFTS TO THE CHURCH… THE EVANGELISTS, PASTORS AND THE TEACHERS. THEIR RESPONSIBILITY IS TO EQUIP GOD’S PEOPLE TO HIS WORK AND BUILD UP THE CHURCH… “.
-        </p>
+      <!-- Dot indicators -->
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex justify-center">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
       </div>
     </div>
+  </div>
 
-    <p class="info-text mt-8">
-      Most lessons were adapted from the COG’s Pathway of Discipleship and have been customized to suit the needs of the local church without compromising the truth. In Church of God-Dasmariñas (COG-Dasma), each committed worker takes this course as one of the requirements for ministry. The course, by the grace of God, has proven to contribute to the vision of the church. After more than 20 years of existence, COG-Dasma has grown to approximately 9,500 strong attendees, with more than 2,800 workers, 16 Sunday worship services and a Saturday Healing service. It also includes more than 1,500 children Sunday school attendees every week.
+  <script>
+    const carousel = document.getElementById('carousel');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+
+    function goToSlide(index) {
+      currentIndex = index;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+      updateDots();
+    }
+
+    function updateDots() {
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentIndex);
+      });
+    }
+
+    // Auto swipe every 3 seconds
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % dots.length;
+      goToSlide(currentIndex);
+    }, 3000);
+
+    // Optional: Swipe support for mobile
+    let startX = 0;
+    carousel.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+    carousel.addEventListener('touchend', e => {
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+      if (diff > 50 && currentIndex < dots.length - 1) goToSlide(currentIndex + 1);
+      else if (diff < -50 && currentIndex > 0) goToSlide(currentIndex - 1);
+    });
+  </script>
+
+<!-- CLDP Sections -->
+<div class="px-6 py-8">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- CLDP 1 Section -->
+    <div class="text-justify">
+      <h3 class="text-2xl font-bold mb-4 text-center">CLDP 1</h3>
+      <p class="uppercase">
+        CLDP 1 IS THE FIRST OF THREE CHURCH OF GOD’S BASIC DISCIPLESHIP COURSES. IT IS PRIMARILY DESIGNED TO CLEARLY EXPLAIN THE BASIC FOUNDATIONS OF CHRISTIAN LIVING. EACH LESSON ENDS WITH A MEMORY VERSE, A DEVOTIONAL READING AND AN ASSIGNMENT. THIS COURSE CULMINATES WITH THE ESSENTIAL ACTIVITIES, NAMELY THE PRACTICUM ON WITNESSING, WATER BAPTISM, AND THE LIFE IN THE SPIRIT SEMINAR.
+      </p>
+    </div>
+
+    <!-- CLDP 2 Section -->
+    <div class="text-justify">
+      <h3 class="text-2xl font-bold mb-4 text-center">CLDP 2</h3>
+      <p class="uppercase">
+        CLDP 2 IS THE SECOND OF THE THREE CHURCH OF GOD’S BASIC DISCIPLESHIP COURSES. SINCE THIS CLASS BUILDS AND FOCUSES ON BEING CHRIST-LIKE IN CHARACTER, YOU MUST FIRST COMPLETE CLDP 1 BEFORE TAKING THIS PROGRAM. OUR MOTIVATION COMES FROM EPHESIANS 4:14-15… “THEN WE WILL NO LONGER BE LIKE CHILDREN… INSTEAD, WE WILL HOLD TO THE TRUTH IN LOVE, BECOMING MORE AND MORE IN EVERY WAY LIKE CHRIST, WHO IS THE HEAD OF HIS BODY, THE CHURCH”. EACH LESSON ENDS WITH A MEMORY VERSE, A DEVOTIONAL READING AND AN ASSIGNMENT. THIS COURSE CULMINATES WITH THE ANOINTING SERVICE AS AN ESSENTIAL ACTIVITY.
+      </p>
+    </div>
+
+    <!-- CLDP 3 Section -->
+    <div class="text-justify">
+      <h3 class="text-2xl font-bold mb-4 text-center">CLDP 3</h3>
+      <p class="uppercase">
+        CLDP 3 IS THE THIRD OF THE THREE CHURCH OF GOD’S BASIC DISCIPLESHIP COURSES. THIS CLASS IS DESIGNED TO MAKE YOU UNDERSTAND ABOUT YOUR CALLING IN THE MINISTRY AS WELL AS THE HEART AND CHARACTER QUALIFICATIONS OF A LEADER CALLED BY GOD. THUS, IT IS IMPERATIVE THAT YOU FINISH CLDP 1 AND CLDP 2 BEFORE TAKING THIS COURSE. OUR MOTIVATION COMES FROM EPHESIANS 4:11-12, WHICH STATES, “GOD IS THE ONE WHO GAVE THE GIFTS TO THE CHURCH… THE EVANGELISTS, PASTORS AND THE TEACHERS. THEIR RESPONSIBILITY IS TO EQUIP GOD’S PEOPLE TO HIS WORK AND BUILD UP THE CHURCH…”.
+      </p>
+    </div>
+  </div>
+
+  <!-- Last Paragraph -->
+  <div class="text-justify mt-8">
+    <p>
+      MOST LESSONS WERE ADAPTED FROM THE COG’S PATHWAY OF DISCIPLESHIP AND HAVE BEEN CUSTOMIZED TO SUIT THE NEEDS OF THE LOCAL CHURCH WITHOUT COMPROMISING THE TRUTH. IN CHURCH OF GOD-DASMARIÑAS (COG-DASMA), EACH COMMITTED WORKER TAKES THIS COURSE AS ONE OF THE REQUIREMENTS FOR MINISTRY. THE COURSE, BY THE GRACE OF GOD, HAS PROVEN TO CONTRIBUTE TO THE VISION OF THE CHURCH. AFTER MORE THAN 20 YEARS OF EXISTENCE, COG-DASMA HAS GROWN TO APPROXIMATELY 9,500 STRONG ATTENDEES, WITH MORE THAN 2,800 WORKERS, 16 SUNDAY WORSHIP SERVICES AND A SATURDAY HEALING SERVICE. IT ALSO INCLUDES MORE THAN 1,500 CHILDREN SUNDAY SCHOOL ATTENDEES EVERY WEEK.
     </p>
+  </div>
 
-    <!-- Big Image at the Bottom -->
-    <div class="mt-10 flex justify-center">
-      <img src="images/gpf.jpg" alt="Large GPF Image" class="w-full max-w-4xl rounded-lg shadow-lg">
-    </div>
+  <!-- Big Image at the Bottom -->
+  <div class="mt-10 flex justify-center">
+    <img src="images/gpf.jpg" alt="Large GPF Image" class="w-full max-w-4xl rounded-lg shadow-lg">
+  </div>
 
-</body>
-</html>
+  <!-- Login Button Card -->
+<div class="flex justify-center py-8">
+  <div class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-md text-center">
+    <h3 class="text-xl font-semibold mb-4">ACCESS THE CLDP DATABASE</h3>
+    <a href="https://cogphilippines.com/cldpdb/login" target="_blank" rel="noopener noreferrer">
+      <button class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+        LOGIN TO CLDP DATABASE
+      </button>
+    </a>
+  </div>
+</div>
