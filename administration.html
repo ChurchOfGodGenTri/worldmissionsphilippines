@@ -51,14 +51,20 @@
       width: 100%;
       display: flex;
       align-items: center;
+      justify-content: center; /* Center the text horizontally and vertically */
       padding-left: 3rem;
-      justify-content: flex-start;
+      text-align: center; /* Center the text */
     }
 
     /* Disable background effect on mobile */
     @media (max-width: 640px) {
       .hero-banner {
         background-attachment: scroll; /* Disables fixed background on mobile */
+      }
+
+      .banner-overlay h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        padding-left: 0; /* Remove unnecessary left padding */
       }
 
       .nav-link {
