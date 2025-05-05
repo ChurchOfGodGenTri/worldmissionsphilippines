@@ -109,7 +109,7 @@
         </div>
       </div>
         <a href="sermon.html" class="nav-link">SERMON</a>
-        <a href="gallery.html" class="nav-link">GALLERY</a>
+        <a href="mikay's.html" class="nav-link">MIKAY'S EXTENSION</a>
       </nav>
     </header>
 
@@ -130,7 +130,7 @@
       </div>
     </details>
     <a href="sermon.html" class="block py-2 nav-link">SERMON</a>
-    <a href="gallery.html" class="block py-2 nav-link">GALLERY</a>
+    <a href="mikay's.html" class="block py-2 nav-link">MIKAY'S EXTENSION</a>
   </div>
 
   <script>
@@ -140,26 +140,54 @@
     });
   </script>
 
-  <!-- Video Section -->
-  <h1>LATEST ONLINE SERVICE</h1>
-  <p>ENJOY THE LATEST SERVICE</p>
+<!-- Video Section -->
+<section class="px-6 py-10 bg-gray-100">
+  <div class="text-center mb-8">
+    <h1 class="text-3xl font-bold text-blue-900">LATEST ONLINE SERVICE</h1>
+    <p class="text-lg text-gray-700">ENJOY THE LATEST SERVICE</p>
+  </div>
 
-  <div class="video-container">
+  <!-- Large Video -->
+  <div class="flex justify-center mb-10">
+    <div class="w-full max-w-5xl aspect-video">
       <iframe 
-          class="main-video"
-          src="https://www.youtube.com/embed/KGK402BbUD8?autoplay=1" 
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/TDYQ0MPM1nw?autoplay=1" 
+        title="Latest Service"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
       </iframe>
+    </div>
   </div>
 
-  <div class="video-grid">
-      <h2>OTHER ONLINE SERVICE</h2>
-      <div class="grid-wrapper">
-          <iframe src="https://www.youtube.com/embed/ZSasSp5xaQA"></iframe>
-          <iframe src="https://www.youtube.com/embed/tmjAD2V12lI"></iframe>
-          <iframe src="https://www.youtube.com/embed/IHqeBb02m5U"></iframe>
-      </div>
+  <!-- Other Videos Grid -->
+  <div class="text-center mb-4">
+    <h2 class="text-2xl font-semibold text-blue-800">OTHER ONLINE SERVICES</h2>
   </div>
-</body>
-</html>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
+    <div class="aspect-video">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/6gC1N9wprOo"
+        title="Service 1"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="aspect-video">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/lROj5sZuEtg"
+        title="Service 2"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="aspect-video">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/7kTHHHUzymc"
+        title="Service 3"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
