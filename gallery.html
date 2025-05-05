@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Church Of God</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-variant: small-caps;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dark-blue {
+      color: #003366;
+    }
+
+    .nav-link {
+      font-family: 'Calibri', sans-serif;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: #003366;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .background {
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .background h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .background .button {
+      background-color: #FFD700;
+      color: #003366;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .background .button:hover {
+      background-color: #e6b800;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="bg-white text-blue-800 py-4 px-6 flex justify-between items-center shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="images/coglogo.png" alt="Church Logo" class="h-20 w-20">
+      <div class="leading-tight">
+        <h1 class="text-2xl font-bold tracking-wide dark-blue">Church of God</h1>
+        <p class="text-sm dark-blue">WORLD MISSIONS, PHILIPPINES</p>
+      </div>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-button" class="text-blue-800 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-4">
+      <a href="index.html" class="nav-link">HOME</a>
+      <a href="aboutus.html" class="nav-link">ABOUT US</a>
+      <div class="relative group">
+        <a href="#" class="nav-link">WORDA</a>
+        <div class="absolute left-0 bg-white shadow-lg mt-1 rounded-md z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 pointer-events-auto">
+          <div class="flex flex-col min-w-[200px]">
+          <a href="worda.html" class="block px-4 py-2 nav-link">W.O.R.D.A</a>
+          <a href="worship.html" class="block px-4 py-2 nav-link">WORSHIP</a>
+          <a href="outreach.html" class="block px-4 py-2 nav-link">OUTREACH</a>
+          <a href="relationship.html" class="block px-4 py-2 nav-link">RELATIONSHIP</a>
+          <a href="discipleship.html" class="block px-4 py-2 nav-link">DISCIPLESHIP</a>
+          <a href="administration.html" class="block px-4 py-2 nav-link">ADMINISTRATION</a>
+        </div>
+      </div>
+    </div>
+      <a href="sermon.html" class="nav-link">SERMON</a>
+      <a href="gallery.html" class="nav-link">GALLERY</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 py-4 bg-white shadow-md">
+    <a href="index.html" class="block py-2 nav-link">HOME</a>
+    <a href="aboutus.html" class="block py-2 nav-link">ABOUT US</a>
+    <div class="border-t border-gray-200 my-2"></div>
+    <details class="w-full">
+      <summary class="nav-link cursor-pointer">WORDA</summary>
+      <div class="ml-4 mt-2">
+        <a href="worda.html" class="block py-1 nav-link">W.O.R.D.A</a>
+        <a href="worship.html" class="block py-1 nav-link">WORSHIP</a>
+        <a href="outreach.html" class="block py-1 nav-link">OUTREACH</a>
+        <a href="relationship.html" class="block py-1 nav-link">RELATIONSHIP</a>
+        <a href="discipleship.html" class="block py-1 nav-link">DISCIPLESHIP</a>
+        <a href="administration.html" class="block py-1 nav-link">ADMINISTRATION</a>
+      </div>
+    </details>
+    <a href="sermon.html" class="block py-2 nav-link">SERMON</a>
+    <a href="gallery.html" class="block py-2 nav-link">GALLERY</a>
+  </div>
+
+  <script>
+    document.getElementById('menu-button').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+
+<!-- Gallery Header Section -->
+<section class="bg-gray-100 py-12">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">What a powerful Sunday, indeed!🙌</h2>
+    <p class="text-gray-700 text-md md:text-lg">Today’s message, “It’s Okay to Not Be Okay” with Ptra. Janna Asenjo, was a beautiful reminder that God meets us right where we are.
+      Thank you to everyone who joined us in worship and opened their hearts — God truly moved in a special way today!
+    </div>
+
+  <!-- Gallery Grid -->
+  <div class="max-w-6xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495572922_1110325237804741_8502726192614437494_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEq0z_AdcC5cRNdDDKbOyPG59V4rQ-GkMbn1XitD4aQxrK_lNwnTtJO-hAi3wellOAsQwIhRlgrZmx8m9Wkntie&_nc_ohc=qt1Fq8YRD5sQ7kNvwHCp3-_&_nc_oc=AdnoIVheKcSUhl0J0UpqZckyPxj4bmX4gSGpvoPi3mXR-ZkY9F4ADcXx3iREs9NwW6I&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=yUkAkNIF4Zeut7AuB88KnQ&oh=00_AfH0QYY_ozS9Gd2eoDZgyB6Y9YDR67JysZ6LpwoToyAR8w&oe=681EA234" alt="Church Event 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495453134_1110325354471396_9208611480214938260_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFWOEN66cOLoM7Fvl2o9jrcUlCygRpymENSULKBGnKYQ7bTH-FwqOQ7PYoCrUbExwARm9JGr4nYx0xcepCzU3tF&_nc_ohc=aNTqiaTyZMEQ7kNvwH_GmFd&_nc_oc=Adnc9kjK1hnD--HsUurFVJSml278okDxrx9cQhAX1pesDuffmUYwVOUWDYJJuV1UyGo&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=MoKHSkrCsi2GGq0_-6yOLQ&oh=00_AfFTfetWDVHpNm3KKwVReWobNRhuh-udevRyer3DvuNsZA&oe=681E70EE" alt="Church Event 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-8.fna.fbcdn.net/v/t39.30808-6/494754088_1110325501138048_5847852778585351486_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHSQfMDRlWruEVwqNYyqv1XROPwqoWwtalE4_CqhbC1qT5q2sgdHPwpdJCXJru2CC25E-1EVhCn1NGX5fJiXy7A&_nc_ohc=GgHiXx6EQoMQ7kNvwEs2Fjk&_nc_oc=AdnqEkEaaJ0gkD41ikMhk_z2PvtA8OpOBcdwrIRdpJWv-LVLiKoFBN6d2oOpy3_dWLk&_nc_zt=23&_nc_ht=scontent.fmnl4-8.fna&_nc_gid=WVyqad1NPaoRrjzYJ0PO3g&oh=00_AfFMYJrO6dsH9HGTnR1V8IvdwGr5nHDXesis3aq9uucC9g&oe=681E7A47" alt="Church Event 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/494726663_1110325607804704_7053633920515684276_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGjSmKHlpZxnuqIu4MoWuAvzFexPG8ox7HMV7E8byjHsV0jflFvIIwtz0Os3PBgbEWEmHXA1zdEhoRyjxbRjZKr&_nc_ohc=P7_qLZEvXm8Q7kNvwEWiv9C&_nc_oc=Adl63HOGx7pyZ3AM3vjVJj5x3E5kSHqmAPvmBFAZWMKi2dlFfKdVYMTjQS3hvBJ0LrE&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=1j6e2ydVGdgq24WZ0Th3QQ&oh=00_AfFf1MWzm6E1Tisi86H7oR_jPKw2TSB2HkTnXF5qpUuglw&oe=681E8DE6" alt="Church Event 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495144597_122241825944017841_1408212536259085323_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGgXAn9cP1dSPDWdoaEiyeJlH7pDhozmyaUfukOGjObJvt54cW4A58MlqFa-SST0Lh6pOYSL-IM06RARw8-PkE0&_nc_ohc=Cr_Tm56rCZsQ7kNvwH-WygK&_nc_oc=AdkUdgXsQCJMidQldysjGwRAptSAeMv5zLp4usuHu3x716Y9xBbFNrWp8bJvqIpPR5s&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=NAtIyoaA4YiYQrJ-5Ony_A&oh=00_AfF-QiDL0lOk4U4E1cm_CjS0W9oGFQqaEC751_nHVBFmuA&oe=681E7A59" alt="Church Event 4" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495087998_1110325661138032_2175929108928747317_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGN_itKuy5rnXYQX76yp3Z6EpmvhKkEp8kSma-EqQSnyVqqtmJBPyzoiuBdG4fnNWFjz67FgadtEYN7LqXolGQU&_nc_ohc=TGOAaUVrAwUQ7kNvwFP__kZ&_nc_oc=AdlOsniBzeoDWGR3PMfZYSV5Z8V5mL9CDGOUBryJKlNnAp-5qPQK0IiuN9dLQA4HPn4&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=hwY_CfiOCXqNO7bY3sqzqQ&oh=00_AfFENo-X2GSBfZlc-FseknxsjGXjhVI8AkUImE1lghGbrg&oe=681E9212" alt="Church Event 5" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495613325_1110325744471357_5925193634360762456_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFYPQpP5tzdNz-LRKbaYC-sZOZF6hDFsJ1k5kXqEMWwnfO9kJvBShvCrzsPplbAjO1VcqapLxUt3SB_8HMhW7yz&_nc_ohc=RZBaAn1GmxoQ7kNvwFb8u5q&_nc_oc=AdnL2qFr2xNWEs-O6SnqF2WhHPNOPeypUTohZZcDSYmVr71XoWUkIwmOQpDs8E9fWkI&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=XW_yDnCk4BlT6N9j6myFCg&oh=00_AfHZBFwbhPkfbpDCKamHIxLotufDGjZtc1rSsL9fd0Yeog&oe=681E9E36" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495072258_1110325801138018_5477162056081905383_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHIKtbjqtB_8bl_UJcSdB77FzczLPMk7_cXNzMs8yTv9xkHC-G6WYIxHxiw-E75iUoUkoWFstXTiiOWYoFCzUXw&_nc_ohc=mGbo1rClgd4Q7kNvwHARlD3&_nc_oc=Adn1ZVajfIckoBukWNHKKBJ3oA0y9cFwjroA5rJzSI-JqdJIf9aeJh7KjwkfMBf4SF8&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=lxLiG7JhjpAJUBhY5HQfdg&oh=00_AfEabvRuakiT7fefjc1gq9pFqPYFMU3rN_fxzkGvTTwOew&oe=681E9750" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495182065_1110325834471348_4248229910254186153_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF8h4sspvH6XQIPLi-Z8NHj6bpJEqKtfFzpukkSoq18XG1f-cRYqXq38dCeex78zjM6zJbeft3GunNy5SjRzFNr&_nc_ohc=QHH9pwmSAbIQ7kNvwEwQinR&_nc_oc=AdmpRsJStCJiDSO0tKjw5qtdY2Wok8EkwqgkevtY1a4PAhddI_9MN8YdNAwsiymneNc&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=H43MKGxkPXJMjexJv2z2tw&oh=00_AfHtajHU1VEutGt31hj8OmRYyODIfUU7jd7kD4XbPekLlg&oe=681E898A" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-8.fna.fbcdn.net/v/t39.30808-6/495024606_1110325887804676_8367295415566093132_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHIaHNT6hup-s2NuW_V7MlPxwUz3FHWDi_HBTPcUdYOLyB9oyDKb3leuvMpl_3uEk6JefJOI1nOM_t7TyWeaGbe&_nc_ohc=s7Ygjvmuzl0Q7kNvwF2M9H9&_nc_oc=AdniRSM0CIHAPtGx4qC05vRvbnJnE9T68sqU70YP99dCXmwTixdbsTA2_2K-1dSylr8&_nc_zt=23&_nc_ht=scontent.fmnl4-8.fna&_nc_gid=f9Xd7wysq3FcGXzp7TkJyw&oh=00_AfHDnIQCUixC087byFq-_KYoFZSOGCLadGBMX-pu0ZgzYQ&oe=681E85CA" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495500287_1110325951138003_6502150256527479220_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF3d_aNTHOGw91vLc8Qp_Wk7ZVNwsxZ6ZztlU3CzFnpnGzvUQaYP9i_VERZx4zWcHhWk0Vbfmt735g-8KHCLFaV&_nc_ohc=gFP9tic2UUcQ7kNvwHCIijW&_nc_oc=AdlBQ-rm_0P2MwY73jQZ1Mp24qT6XgRlonWzQkJlDycEReXk5Chf2HkacI9J7_MA8ks&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=x4yCmH3n2KSSdmZ8rdyv8A&oh=00_AfHIzGYtNtWGfWf2b6xCoruoKVTLeUi7j4Rq4PmnqMx4QQ&oe=681E7EC3" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495214448_1110384104465521_4727037175097691866_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEZJXc_94g3TZhJEHLK3ryyvxt6KZkHNNG_G3opmQc00SpH0Uovc0LvlItqCB3w5zD5k-Lb2MsfQfGnt8ZWcxoe&_nc_ohc=ibFbBExKWPMQ7kNvwExg0JO&_nc_oc=AdmLBCH4FIlyixtCgaG8dE8pl1e8ePdwc66I8JDyygRlLZC39IGt1YLN_-kGhot6HEA&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=wg54NppfpqlJafB9goMQSA&oh=00_AfFavLWC9ZSxN4-1gqq6kaSTvbDFutA8B6bPdIDVSvzbOg&oe=681EA839" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495206235_1110384274465504_5768418571621142214_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGaJkRcFi3LvB47bUOZEv1_jB2RMwqnFQaMHZEzCqcVBlQdMqxSHFKEo8-9MIYivS7ByAwHFsFr2WgCer4Of5i7&_nc_ohc=gnfYuJCZ1jUQ7kNvwEulZ1F&_nc_oc=AdnsgHCh5QEUdCggY57eWvh5-TaAfgDfb903DP1pWfiPzcjouH3kbO9iR4KIaksRSPk&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=koAFcEs4rXES-S7NZ76usw&oh=00_AfH8boYgL7RAzPTpF56hp3iMeDI3cvWC2pkgKgpTYGvZeA&oe=681E7A00" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/495155837_1110383831132215_5651779444037442971_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEEYM2w3T7x6BN4G24EHFoXAsILvxCNzxsCwgu_EI3PG2G010b0bgPBB_e8Tuo1Uh1NZKBnhloqQP8wMpd8haWf&_nc_ohc=TNL2R3s3Qq4Q7kNvwGXM7wY&_nc_oc=AdlyMFkBvGdTj2Ece1XNvT9CNgWZc1pBd7jeNY52XyrAHtlMCInLtph4ejM9ShUxrMI&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=RPCHzUL1RQ2ogIzpiVidfA&oh=00_AfEeqQD4N23T9uRktFTNN6YG2VdMpmV_V_H-k27G2t2Dcg&oe=681E8E16" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/494004600_1110383881132210_6033659572551810902_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEWcj1HamgpptsJCSqcHVx6FmUQTrQ0EQQWZRBOtDQRBM4dHVAwi_sJBSCF27JVQlLpDP98vPCYlhhtCFCx8Z4x&_nc_ohc=RvAhQ2txZdIQ7kNvwGPs7oG&_nc_oc=AdmG6T5M5Je_X64MRYAlCrJ2-gGyFV7tnbTyaqmdRJXVvPlcQg4o5arTpd_bOtUU6YM&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=U0HYzfv4zoC91U6FUHdvVg&oh=00_AfEsaHhvFG61vGosYdobPdElnzltRHaBxcvEe1hDz0L83A&oe=681EA36C" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/494827213_1110383931132205_3655080189684640109_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFsIEyHZHkYLECMDLKaccgIQ_sLTtV-PKRD-wtO1X48pEzurVXwzC6dvr3NZmZXaGrWkelv74MYK-lzYx4RZmQb&_nc_ohc=FAariSpVLo0Q7kNvwFaFI-M&_nc_oc=Adkp-QlZw0157Q1xkE4TwEt7k3xG_3c0B5QnK1SMH2PKxP1eRd2lT3bB0IhtpnGTmHY&_nc_zt=23&_nc_ht=scontent.fmnl4-5.fna&_nc_gid=tkieyddQ4W777ueWE9qO4Q&oh=00_AfHcxSitRoX5dh4791kqkHgCGGI5dmC3qSyZLZJjHZOkkQ&oe=681E7238" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+    <img src="https://scontent.fmnl4-8.fna.fbcdn.net/v/t39.30808-6/495575652_1110383984465533_7423507442938503880_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEH1C8kMRkILYwOPpHEuum4OE3snS9Lsk04TeydL0uyTekHgqm6x1Iwg_HeqnL94dNEWjnMXOE6q02xRHtZ1y09&_nc_ohc=Tkff3xqU10MQ7kNvwG4XZuU&_nc_oc=AdlJqK3ovEkbbPnSgBlEHw8eEJfHlHHeV9o357EiV45eXltL_Ej6-OMvvOcjlUtkoWA&_nc_zt=23&_nc_ht=scontent.fmnl4-8.fna&_nc_gid=8Ua099iL3NGEYYK2Rtol1A&oh=00_AfGy0QF20k2WnMz3TRnjszLIrrLCC9LtpRFAPm3TWay7-g&oe=681E8A11" alt="Church Event 6" class="w-full h-64 object-cover rounded-lg shadow-md">
+  </div>
+
+</section>
+
+<footer style="background-color: #ADD8E6; text-align: center; padding: 20px; font-family: Arial, sans-serif; color: #333;">
+  <div style="margin-bottom: 15px;">
+      <a href="https://www.facebook.com/ChurchOfGodGeneralTrias" target="_blank" style="color: #333; text-decoration: none; font-size: 16px; margin-right: 20px;">Facebook</a>
+      <a href="mailto:info@churchofgodgentratas.org" style="color: #333; text-decoration: none; font-size: 16px;">Email</a>
+  </div>
+  <div style="font-size: 14px; color: #555;">
+      <p>&copy; 2025 Church of God General Trias. All rights reserved.</p>
+      <p><strong>Disclaimer:</strong> Unauthorized copying or reproduction of this page is strictly prohibited.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
